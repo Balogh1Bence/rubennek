@@ -1,0 +1,642 @@
+﻿DOS  Lynx (webböngésző) 
+A Lynx szöveges web böngésző, ami kurzorral címezhető szöveges terminálokon fut, és szé-leskörűen konfigurálható.
+ 
+Működése
+A Lynxszel úgy történik a böngészés, hogy a kurzornyilakkal lehet mozogni a hivatkozások között, illetve a hivatkozások sorszámmal vannak ellátva, és be kell ütni a kívánt sorszámot. Az újabb verziók támogatják az SSL-t és sok HTML-funkciót. A táblázatokat szóközökkel formázza, a kereteket névvel azonosítja, és úgy böngészhetők, mintha különálló oldalak lennének. A Lynx nem tudja megjeleníteni az oldalak nem szöveges összetevőit, mint a képet vagy a videót, de képes arra, hogy elindítsa hozzájuk a megfelelő megjelenítő prog-ramot, egy képnézegetőt vagy egy videó lejátszót.
+Mivel a beszédszintetizáló szoftverek könnyen értelmezik a felhasználói felületét, a Lynx egykor népszerű volt a látássérült felhasználók körében, de a jobb képernyőolvasó programok már nem teszik szükségessé használatát. A Lynx egyik fel-használási területe a régebbi böngészőkkel való kompatibilitás ellenőrzése.
+A Lynx máig megtalálható sok Unix-termékben és Linux-disztribúcióban; különösen jól használható dokumentáció olvasására vagy fájlok letöltésére, ha csak szöveges megjelení-tési lehetőség áll rendelkezésre. Szintén jól használható, ha egy távoli rendszerterminálon van szükség web böngészésre. Szöveges megjelenítési felülete és kora ellenére még mindig haté-konyan használható a modern web böngészésére, köztük olyan interaktív feladatokra, mint akár a Wikipédia szerkesztése. A szöveges módú böngészés előnyei akkor a legnyil-vánvalóbbak, ha alacsony sávszélességet használunk, vagy olyan régi hardvert, ami lassan jele-nítené meg a képi tartalmakkal teli oldalakat.
+Adatvédelem
+Mivel a Lynx nem támogatja a grafikus tartalmakat, a felhasználók után kémkedő ún. web bugokat sem tölti le, ahogy a webmailben megjelenített HTML-levelek ilyen web bugjait sem– bár vannak webmail-szolgáltatások, ahol ki lehet kapcsolni a képek automatikus megjelenítését, és a legtöbb grafikus web böngésző is lehetővé teszi a képmegjelenítés letiltá-sát.
+A Lynx támogatja a HTTP-sütiket, ami szintén alkalmas a felhasználók nyomon követé-sére, de nem támogatja a JavaScriptet, így a JavaScript-sütiket sem, amikre szükség van néhány weboldal helyes működéséhez. Ahogy a legtöbb böngészőben, a Lynxben is letiltha-tó a HTTP-sütik támogatása. A Lynx támogatja még a böngészési előzményeket és az oldalak gyorsító tárazását is.
+Története
+A Lynxet a Kansasi Egyetem Academic Computing Services részlegének elosztott számí-tásokkal foglalkozó csoportja fejlesztette ki; a hypertext-böngészőt eredetileg 1992-ben egyetemisták egy csoportja (Lou Montulli, Michael Grobe és Charles Rezac) a campuson belüli információterjesztésre alkotta meg, a Campus-Wide Information Server keretében, a Gopher protokoll felhasználásával. A bétaváltozat elérhetőségét 1992. július 22-én jelentet-ték be a Useneten. 1993-ban Montulli Internet-interfésszel látta el a programot, és megjelentet-te a 2.0 verziót. 
+Garrett Blythe 1994 áprilisában adta ki a DosLynx-etés csatlakozott a Lynx csapatához. Fote-os Macrides a Lynx VMS-re való portolásának nagy részét elvégezte, és a karbantartási mun-kákat is vezette egy ideig. 1995-ben a Lynxet GNU General Public License licenc alá helyez-ték, azóta a Thomas Dickey vezette önkéntesek tartják karban.
+Platformok és funkciók
+A kezdetben Unix és VMS alá fejlesztett böngésző jelenleg Linux alatt is az egyik népsze-rű szöveges böngészőprogram. Elérhetők DOS alatti változatok, de az újabb kiadások futnak az összes Microsoft Windows-verzión és Mac OS X alatt is. Átültették a „klasszi-kus” Macintoshra is MacLynx néven (System 7 és későbbi rendszerekre). BeOS, MINIX, QNX, AmigaOS és OS/2 (Lynx/2 néven) alatt szintén hozzáférhető.
+A Lynx a libwww programkönyvtáron alapul, így számos kommunikációs protokollt ismer: ezek a Gopher, HTTP, HTTPS, FTP, WAIS és NNTP.
+
+
+
+
+DOS
+A DOS rövidítés jelentése: Disk Operating System, azaz lemezek kezelésére képes operációs rendszer.
+ 
+A DOS története
+ DOS/360-at, vagy röviden csak DOS-t az IBM 1966 júniusában adta ki. A DOS névvel a TOS (Tape Operating System, azaz mágnesszalag kezelésére képes operációs rendszer) el-lenpárjaként lépett fel. Később a továbbfejlesztett operációs rendszert már egyszerű-en OS/360-nak nevezték.
+Ezt az operációs rendszert speciális lyukkártyacsomagok összeállításával vezérelte az ope-rátor vagy a programozó. Ezek a lyukkártyák alkották a JCL-t (Job Control Langua-ge, feladatvezérlő nyelvet). A programot és adatokat tartalmazó kártyákat a JCL kártyák közé helyezték. A JCL kártyák könnyebb felismerésük céljából általában más, feltűnő színű kartonra készültek.
+x86 DOS rendszerek
+Amikor húsz évvel később a személyi számítógépek képesek lettek hajlékonylemezek hasz-nálatára, a DOS elnevezés újra életre kelt, különböző gyártók különböző rendszereit jelen-tette, ezek közül a legfontosabb az IBM PC operációs rendszere, az MS-DOS, és a vele kompatibilis változatok, melyek uralták az IBM PC-kompatibilis számítógépek pia-cát 1981 és 1995 között: PC-DOS, MS-DOS, FreeDOS, DR-DOS, Novell-DOS, Open DOS, PTS-DOS, ROM-DOS és mások.
+Ezen DOS változatok alapja a CP/M, melyet azonban kibővítettek a UNIX-hoz hasonló könyvtárszerkezet kezelésének képességével, és saját lemezformátumot vezettek be (FAT). 
+Single-user (egyfelhasználós) és single-tasking (egyfeladatos) rendszer, jogosultsági vagy védelmi rendszere nincs.
+A CP/M (Control Program for Microcomputers) rendszert Gary Kildall és a Digital Rese-arch fejlesztett ki 1973-ban, és készítői csak egy egyszerű operációs rendszernek szánták. Viszont nagy sikere lett, 600 000 darabot adtak el belőle, a mikroszámítógépek 70%-án ez futott.
+1980 áprilisában Tim Paterson is elkezdett írni egy operációs rendszert, ( a CP/M egyik korábbi visszafejtett változatát) mivel a Digital Research késett a CP/M-86 operációs rend-szer kiadásával. 
+Ezt a Seattle Computer Products 8086-alapú számítógépeivel lehet használni, és a CP/M forrásán alapult. A Seattle Computer Products ezt QDOS (Quick and Dirty Operating System, vagy más néven 86-DOS) 0.10 néven dobta piacra.
+1980 októberében Gary Killdal nem volt hajlandó eladni a szoftverét az IBM-nek, mivel azok túl alacsony összeget kináltak érte  és a kizárólagos használatért (200000 dollár). Bill Gates, a Microsoft vezetője 50 000 dollárt fizetett a Seattle Computer Products QDOS-áért, hogy leszállítsa azt egy meg nem nevezett kliensnek, az IBM-nek.
+A QDOS-t a Microsoft által alkalmazott Tim Paterson átírta, hogy működjön IBM-alapú számítógépeken is. Decemberben a Digital Research kiadja a CP/M-86 operációs rend-szert. A következő év júliusában a Microsoft minden jogot megvesz a Seattle Computer Pro-ducts-tól a QDOS-ra, és elnevezi MS-DOS-nak.
+Az IBM ezt a programot PC-DOS, míg a Microsoft MS-DOS néven fejleszti tovább. Ezek párhuzamosan zajlanak, de a PC-DOS csak IBM-alapú gépeken működik.
+MS-DOS
+A Microsoft lemezes operációs rendszere, az MS-DOS (Microsoft DiscOperating System, azaz Microsoft lemezkezelő rendszer) egy széles körben használt operációs rendszer volt az IBM-kompatibilis PC platformon (ma már kiváltották az asztali gépek terén a Windows különféle változatai). Első verziója 1981-ben jelent meg, és 8 fő változat készült belőle, mie-lőtt a Microsoft 2000-ben befejezte a fejlesztését. A bevételének és piaci részesedésének köszönhetően ez volt a Microsoft kulcsfontosságú terméke a programozási nyelveket gyártó cégből kiterjedt szoftverfejlesztő vállalattá való növekedés során.
+
+A Microsoft cég 1981. április 24-én az IBM PC számítógéppel együtt jelentette meg a DOS-t. Az MS-DOS 1.00 az Intel 8088 mikroprocesszorra épülő CP/M-szerű operációs rendszer volt, valójában nem eredeti Microsoft fejlesztés, hanem egy sikerese felvásárlás átalakított eredménye.
+Fejlesztés
+Mind az IBM, mind a Microsoft adott ki saját DOS-változatokat. Eredetileg az IBM csak ellenőrizte és becsomagolta a Microsoft termékeit, így az IBM verziói röviddel a Microsoftéi után jelentek meg. Az MS-DOS 4.0 azonban valójában az IBM PC-DOS 4.0 verzión ala-pult, mert akkoriban a Microsoft az OS/2 fejlesztésére koncentrált. A Microsoft „MS-DOS”, az IBM „PC DOS” néven forgalmazta DOS változatait.
+Eleinte amikor a Microsoft licencelte az MS-DOS OEM változatát egy-egy számítógépgyártó cégnek, a gyártó az operációs rendszer nevét is megváltoztathatta (például TandyDOS, Com-paq DOS). A legtöbb ilyen változat teljesen megegyezett az MS-DOS-szal. Egy idő után a Microsoft ragaszkodni kezdett hozzá, hogy a gyártók megtartsák az MS-DOS termékne-vet. Végül egyedül az IBM állt ellen ennek a követelésnek.
+Az MS-DOS nagyon gyors ütemben fejlődött, több jelentős képességet kölcsönözve más ter-mékekből és operációs rendszerekből:  Norton Utilities, a PC Tools (Microsoft Anti-Virus), a QEMMkiterjesztett memória menedzser, a Stacker lemez tömörítő stb.
+Az Intel 80286 mikroprocesszor megjelenésével az IBM és a Microsoft egy közös projek-ten kezdtek el dolgozni, amit OS/2-nek neveztek el és eredetileg az MS-DOS védett módú változata lett volna. Később a Microsoft kiszállt a projektből, hogy minden erőforrását a Windows-ra és a Windows NT-re fordíthassa.
+
+DR-DOS, Novell DOS, OpenDOS
+1988 januárjában a Digital Research, Gary Kidall cége átnevezte a CP/M-et DR-DOS-ra, majd május-ban kiadja a DR-DOS 3.31-et. Ez 512 MB-os merevlemez-partíciókat is támogatott. 
+1990 májusában jött ki a DR-DOS 5.0, majd 1991 szeptemberében a DR-DOS 6.0, amely támogatta a lemeztömörítést. 
+1993 áprilisában a Novell megvette a Digital Research-öt, és a program nevét Novell DOS-ra változ-tatta. Decemberben ki is adta az operációs rendszert Novell DOS 7.0 néven.
+1997 januárjában a Novell eladta a Novell DOS-t a Caldera Systemsnek, ami nyílt forráskód-dal OpenDOS 7.01-ként adja ki. 
+
+PD-DOS, FreeDOS
+A PD-DOS-t 1994. június 28-án tették elérhetővé, ez egy nyílt forráskódú projekt volt, me-lyet Jim Hall indított útjára. Júliustól "Free-DOS" néven vált ismertté. 1996-tól a fejlesztők "elhagyták" a kötőjelet, a projekt azóta FreeDOS néven él. 2006. szeptember 3-án adták ki a FreeDOS 1.0 verzióját. Az aktuális az 1.1-es verzió, azonban még az 1.0 verzió is letölthető.
+A FreeDOS projekt koordinátora jelenleg is Jim Hall. 
+A FreeDOS egy szabad, nyílt forráskódú operációs rendszer, amelyet a GNU GPL licenc alatt terjesztenek. 2006-ban adták ki. A projekt a Microsoft DOS-szal kompatibilis. Szaba-don letölthető a projekt weboldaláról. 
+A FreeDOS alkalmas a kilencvenes években népszerű játékprogramok futtatására.
+A DOS felépítése:
+A DOS alapvetően a következő négy részből áll:
+•	betöltő szektor (boot record) 
+•	ROM-BIOS interfész (IBMBIO.COM vagy IO.SYS)
+•	DOS kernel (IBMDOS.COM vagy MSDOS.SYS)
+•	a parancsértelmező (COMMAND.COM)
+A modulok másik feladata az egység gyökérkönyvtárában elhelyezkedő CONFIG.SYS fájl beolvasása és értelmezése, ami az eszközmeghajtók betöltését és a DOS konfiguráció beállítá-sát jelenti.
+A DOS működése
+A DOS rendszer az alkalmazás és a számítógép hardvere között csatlakozást biztosít. Rendel-kezik memóriakezelő, lemezkezelő, be- és kiviteli szolgáltatásokkal. Az újabb verziók támogat-ják a hálózatkezelést is.
+A parancsértelmező
+A DOS rendszer parancsokkal vezérelhető. A parancsértelmező feladata, hogy a parancso-kat bekérje a felhasználótól, értelmezze, majd végrehajtassa azokat. Az MS-DOS-ban alapér-telmezés szerint a COMMAND.COM állomány felelős a parancsértelmező feladatainak ellátásáért.
+Az operációs rendszer betöltődését az jelzi, hogy megjelenik a képernyőn a gép készenléti jele, az ún. prompt (például C:\>), utána pedig a kurzor villog.
+
+Külső és belső parancsok:
+Belső parancs: a memóriába töltődnek indításkor, mindig rendelkezésre állnak, a COM-MAND.COM parancsértelmező részét képezik.
+Külső parancs: a háttértárolón helyezkednek el, egy adott mappában találhatók (pl. DOS), az elérési útvonal megadása fontos (PATH).  
+•	A DOS parancsai
+A DOS magját három állomány alkotja, amelyek szükségesek ahhoz, hogy az operációs rendszer betöltődjön és működjön, az MSDOS.SYS, IO.SYS és a COMMAND.COM. Ezek az állományok mindig a főkönyvtárban vannak. Az első kettő ún rejtett állomány, míg a COM-MAND.COM minden bekapcsoláskor a memóriába töltődik, mert szerepe szerint a parancsok értelmezését végzi. 
+A DOS parancsoknak általában három fő része van: 
+•	a parancsnév 
+•	a paraméter(ek) 
+•	a módosító kapcsoló(k) (opciók) 
+
+A parancsok egyes részei között elválasztó jelnek (egy, vagy több space) kell lennie, hogy az operációs rendszer értelmezni tudja az utasítást. A parancs minden részére igaz, hogy a kis és nagybetűk teljesen egyenértékűek, tehát az operációs rendszer nem tesz különbséget közöt-tük. 
+A DOS utasításkészletének legfontosabb parancsai:
+Belső parancsok
+•	DATE ------rendszerdátum 
+•	TIME ------ rendszeridő 
+•	DIR ---------könyvtár tartalom listázása 
+•	CLS --------a képernyő tartalomtörlése 
+•	VER --------a DOS verziószámát írja ki 
+•	MD ---------utasítás könyvtár létrehozására 
+•	CD --------- utasítás egy adott könyvtárba való belépésre 
+•	RD --------- adott nevű könyvtár törlése ( csak ha üres !) 
+•	COPY ---- utasítás állományok másolására 
+•	DEL ------- utasítás állományok törlése 
+•	PROMPT -készenléti jel 
+•	TYPE ------szöveges állományok tartalma jelenik meg a képernyőn 
+•	PATH ------könyvtárlista az elérési útvonal beállítása 
+•	REN --------állományok átnevezése 
+•	SET ---------környezeti változó tábla beállítása 
+•	VOL --------a lemez címkéje és sorszáma 
+Külső parancsok
+•	FORMAT ------ lemezkezelő utasítás dattárolás előkészítéséhez 
+•	UNDELETE ----törölt állományok visszaállítása 
+•	DISKCOPY ----Lfloppy lemezre vonatkozó másoló utasítás 
+•	CHKDSK ------ lemezterület ellenőrzése 
+•	PRINT ---------- nyomtató parancs 
+•	EDIT ------------ a DOS szövegszerkesztője 
+•	HELP ----------- egy interaktív helprendszer jelenik meg a monitoron 
+•	MEM ----------- információt ad a lefoglalt és a szabad memóriáról 
+•	FDISK --------- a merevlemez előkészítés fontos utasítása 
+•	SYS ------------ a rendszerállományok másolása megadott meghajtóra 
+•	SCANDISK ---a megadott lemezmeghajtó ellenőrzése, javítása 
+•	stb. 
+ 
+
+ 
+ 
+ 
+Multitasking
+Az MS-DOS-t nem többfelhasználós vagy többfeladatos operációs rendszernek tervezték, de megpróbálták ezt a hátrányt leküzdeni az évek során.
+Felhasználói felület
+Az MS-DOS grafikus felülettel és kötegelt script-futtatási lehetőséggel (batch) rendelkezik a parancsértelmezője, a command.com segítségével. Az MS-DOS-t úgy tervezték, hogy köny-nyen cserélhető legyen a parancs értelmezője, például 4DOS-ra.
+Kompatibilitás
+Az Apple Macintosh 1984-es megjelenése után az IBM PC felhasználói is hasonló grafi-kus felületre vágytak. Sok MS-DOS alatt futó program próbálta az űrt betölteni saját grafikus felülettel, mint a Microsoft Word for DOS, XTree és a Norton Shell. Ez azonban dupla erőfeszítést követelt, és nem biztosított konzisztens felhasználói felületet (még egy ter-mékvonalon belül sem).
+A Microsoft Windows első verziói rendes programok voltak, melyek az MS-DOS-on és klónjain futottak. A későbbi verziók is DOS-ból indultak, de kiterjesztették azt, hogy védett módban fussanak. A későbbi Microsoft Windows verziók is DOS-tól függetlenül futottak, de megtartották a korábbi kód nagy részét, így a DOS az új operációs rendszer-ben virtuális gépként tudott futni. Az NTFS fájlrendszert (a Windows XP alapértelmezett fájlrendszere) használó gépeken az MS-DOS nem futtatható közvetlenül a merevlemezről. Ehhez NTFS-kompatibilis DOS verzió szükséges.
+
+Védett Mód
+Az Intel x86 processzorcsaládja 32-bites változatainak (i386, i486, Pentium, stb.) kibővített üzemmódja, amely beépített támogatást tartalmaz a többfeladatos működéshez és a folyamatok memória- és I/O területeinek elválasztásához, védelméhez.
+A modern többfeladatos operációs rendszerek, mint a Windows 95, a Windows NT, az OS/2 és a Linux mind védett módban működnek, ahol a különböző folyamatok szándékosan vagy véletlenül nem képesek kárt tenni egymásban.
+Valós Mód
+Az Intel x86 processzorcsalád alapértelmezett üzemmódja, amely nem támogatja a többfeladatos működést és nem képes a különböző programok memória- és I/O-területeinek védelmére.
+A korai operációs rendszerek, mint például a DOS vagy a CP/M a processzor valós módjában működnek.
+
+
+
+
+
+
+
+
+Az MS-DOS fejlődés története
+Csak egy oldalas, 8 szektoros formátumú, 160 kB kapacitású lemezeket kezelt, még nem ismerte az alkönyvtárak rendszerét. Az 1.05 verzió csak a hibákat javította, új paranccsal nem rendelkezett. Az 1.10 egy évig uralta a piacot, már képes volt kétoldalas lemezt is kezelni, azaz 320 kB kapacitású, 8 szektoros formátumút. 
+1983-ban az új modell, az IBM PC/XT számára készült el a 2.00 verzió. Ez már ismerte a 10 MB-os winchestert, kezelte a kétoldalas, 9 szektoros, 360 KB kapacitású lemezt, megjelent a UNIX-szeru fájlkezelés és könyvtárszerkezet. A könyvtárszerkezet kezelésére megszületett a tree, cd, md, rd, path, a biztonsági mentéshez a restore és a backup parancs. Új parancsfájl utasítás a goto, if és az echo. Megoldották a print paranccsal a háttérben való nyomtatást. A 2.10 majd a továbbjavított 2.11 verzió igen megbízhatónak bizonyult. 
+1984-ben a IBM PC/AT megjelenésével együtt jött a 3.00 verzió. 20 MB-os winchestert és 1,2 MB-os lemezt volt képes kezelni. Megjelentek a nemzetközi beállítás parancsai: select, keybxx, country=, graftabl. A ramdrive.sys vezérlő lehetővé tette a memórialemez készítést. Az attrib és label parancsok megjelentek a lemezkezeléshez. A hálózat kezelési lehetőség a 3.10 újdonsága volt a javítások mellett, a join és subst parancs is ekkor jelent meg. 
+1986-ban jelent meg a 3.20 verzió, amely a 3,5"-es, 720 kB kapacitású lemezt is tudta kezelni. Új parancs a replace és az xcopy, módosult az attrib, a format, a graphics, a command és a shell=. Az új driver.sys fantom floppy használatát is lehetové tette. 
+1987-ben a IBM PS/2 és az IBM AT-386 modellhez jelent meg a 3.30 verzió. Az 1,44 MB-os 3,5"-es lemezt és a nagy winchestereket is támogatta, de a partíciók mérete nem lehetett nagyobb 32 MB-nál. Kibovítették az ország-beállítási lehetoségeket, módosították a date, time, attrib, backup, restore és fdisk parancsot, új az append, call, chcp, fastopen és az nlsfunc parancs. Új, országfüggo beállítást tett lehetové a display.sys és printer.sys. A call, a @ és a környezeti változók kényelmesebbé tették a parancsfájlok használatát. 
+1988-ban jelent meg a 4.00 verzió. EMS memória használatára alkalmas a buffers=, a ramdrive.sys és a smartdrv.sys. Az fdisk már 32 MB-nál nagyobb partíciót is létre tudott hozni, a share program automatikusan installálódott ekkor. Megjelent az interaktív grafikus felület: a dosshell. Ez nagyon hasonlított megjelenésében az 1985-ben kudarcot vallott Windows 1.0 verzióhoz. A memória használatáról tájékoztatott a mem parancs. A mode parancs lehetővé tette az ansi.sys használata esetén a 43 vagy 50 képernyősor használatát is. A 4.00 verziót már telepíteni kellett, a sys használata is megváltozott. Igazán az 1989-ben megjelenő 4.01 verzió sem volt túl megbízható. 
+Időközben az IBM-mel közösen elkezdik fejleszteni az OS/2 operációs rendszert, amit a jövő operációs rendszerének neveznek. A két cég közötti rejtett feszültség végül is itt tör ki, az IBM visszavonja a megbízást, és önállóan kezdi el fejleszteni rendszerét.
+Az 1990-ben bemutatott 5.00 verzió már támogatta 2,88 MB lemezegység használatát is. Forradalmi változások történtek a memória használatában: az UMB és a HMA megfelelő használata esetén akár 620 kB méretű hagyományos memória lehetett szabad. Az UMB-ba kerülhetett eszközvezérlő a devicehigh=, és program a loadhigh paranccsal. A doskey lehetové tette a parancsok visszahívását, illetve makrók írását. Az edit teljes képernyős szövegszerkesztővé alakult, a qbasic erre épülő fejlesztői környezetet kapott. Elveszett fájlok vissza_állítására szolgált az új mirror, undelete és unformat parancs. A setver összemosta a verziók közti különbségeket. Módosult a dosshell, gyorsabb lett, a dir képes lett keresni és rendezni. A debug kibővült a 80386-os utasításokkal. A parancsok /? kapcsolóval rövid segítséget adtak önmagukról. A graphics támogatta a HP lézernyomtatót. 
+1993-ban megjelent a 6.00 verzió, amit gyorsan javítottak is, a megbízható változat a 6.20 majd a 6.22-es 1994. nyarán kerül piacra. Újdonság a menüvezérlés a konfigurációs- és parancsfájlban, a lemeztömörítés és a vírusellenőrzés lehetősége is beépült. Megjelent az igen veszélyes, tartalommal rendelkező könyvtárt törlő deltree parancs. 
+Mikor lesz újabb verzió? Egyre inkább úgy néz ki, hogy nem is lesz. Az új Windows verzió nem igényli már, önállóvá vált. A DOS túlhaladott lett, illetve az a fejlesztési koncepció, hogy a 15(!) évvel ezelőtti modellen is fusson, mára már tarthatatlanná vált. Ha mégis lesz újabb verzió, akkor azt a hardver és a szoftver fejlődése, a felhasználók igénye fogja kikényszeríteni. (Vagy mint eddig többször is, a korábbi verzió hibáit kell kijavítani.) 
+1995. augusztus végén megjelent az új Windows verzió, amit nem Chicago, hanem Windows '95 néven dobtak forgalomba. A rendszer tartalmaz egy egyszerűsített DOS verziót is, amely a 7.0 számot is kaphatná. A gép használói némi bűvészkedés árán megszabadulhatnak a grafikus felületétől, ekkor hagyományos DOS fut a gépükön. Még az év november 11-én kerül a boltokba ennek az első magyarított verziója.
+1997-ben bejelentik a Windows '95 továbbfejlesztett alkalmazásait és javítják a nyilvánossá vált rendszerhibákat. 1998 márciusára jelenik meg a Windows '98, amely lényeges újdonságokat nem tartalmaz a Súgón kívül a felhasználók számára. A 95-ös verzióban publikus 3000 hiba, mint alap hibaszám maradt.
+
+
+
+
+
+Apple Inc.
+Az Apple Inc. (korábban Apple Computer, Inc.) főként hardvergyártással foglalkozó cég, ami saját szoftver platformot épít Mac OS X operációs rendszerére alapozva, mely a NeXTSTEP által fejlesztett operációs rendszer leszármazottjának tekinthető.
+Az Apple a számítástechnika egyik úttörője volt, meglátta a lehetőséget a grafikus fel-használói felületben (GUI) és az egérben, amit eredetileg a Xerox PARC- cég fejlesztett ki, de a vezetése nem ismerte fel a technológiában rejlő lehetőségeket.
+Termékeit a világ minden táján kedvelik stílusuk, egyszerű használatuk, valamint stabili-tásuk miatt; a szegényebb országokban azonban nem igazán terjedtek el magas áruk miatt. Magyarországon napjainkban kezd egyre nagyobb teret hódítani a korábbinál kedvezőbb árak és az életszínvonal emelkedésének köszönhetően. 
+A cégtől nem áll távol a Unix filozófia sem, sőt a nyílt forrással is megpróbálkoztak. El-ső Unix rendszerük az A/UX az 1990-es évek elején jelent meg, majd az ezredforduló környékén a Mac OS X avagy Darwin.
+Története
+ Apple I
+Steve Wozniak elektromérnök 1975-ben egy újszerű számítógépet tervezett, amely az elektronika iránt érdeklődő amatőrök igényeinek felel meg. Barátja Steve Jobs üzleti lehető-séget lát a számítógépben és ráveszi Wozniakot, hogy szándéka ellenére próbálják meg értékesíteni a terméket. Miután pénzt szereztek - Jobs kocsiját, Wozniak számológépét adta el - hozzákezdtek a cég alapításhoz. Jobs, hogy az esetleges vitás helyzetekben a patthelyze-tet elkerüljék felkéri Atari-s munkatársát - a vállalkozások területén már tapasztalt - Ro-nald Wayne-t, hogy csatlakozzon ő is a céghez. Így 1976. április 1-jén mindhárman aláírták az alapító okiratokat. Wayne azonban 11 nap múlva - korábbi vállalkozásainak rossz tapasz-talata miatt - aggódni kezd és inkább kilép a cégtől, eladja 10%-os részesedését 800 dollárért.
+Az Apple első logója
+
+Az Apple név eredete
+
+Sok teória jelent meg, hogy miért kapta a szokatlan Apple (alma) nevet a cég. Az egyik közis-mert vélekedés szerint Newton legendás almája volt a névadó, azonban Steve Jobs ezt tagad-ta. Valójában meghökkentő nevet kerestek, ami vicces és barátságos, de nem akartak olyan nevet adni, ami megszokott volt akkoriban a szakmában. „Éppen gyümölcs diétán voltam és egy almaültetvényről tartottam hazafelé” emlékezett vissza Jobs 2010-ben. Nem is szólva arról hogy így az „A” kezdőbetű miatt előre kerültek a céges listákban. Jobs minél előbb szerette volna a cégalapítást befejezni, így mivel egy napon belül nem jutott jobb eszükbe, maradt az Apple név. A newtoni eredet elképzelésnek az lehet az alapja, hogy alapítás után Ronald Wayne az Apple I értékesítésekor rajzolt egy logót, ahogy Newton ül egy almafa alatt, de ez már névválasztás után volt és nem is tartották meg később ezt az irányt. 
+       
+Steve Jobs 			Ronald 	Wayne			 Steve Wozniak
+Fontosabb mérföldkövek a cégnek:
+•	1976-ban Steve Jobs-szal, Steve Wozniakkal és Ronald Wayne-nel közösen alapítják a Apple Computert, ami az 1970-es években a két Steve hobbijára épülő garázsvállalkozás-ként indult. Az Apple Computert első gépe az Apple I.
+•	1977-ben elkészül az Apple II és a bevételek átlépik az egy millió dollárt. 1977-ben 2500 darabot adnak el. 1981-ben már 210 ezer darabot. Tizenhat év alatt összesen 6 millió da-rabot értékesítenek belőle. Mike Scottnak felajánlották az elnöki posztot az Apple-nél.
+•	1980 májusában elkészül az Apple III, de Steve Jobs által a tervezési viták és ütközések gyenge kivitelezéshez vezetett és így nem volt sikeres gép.
+•	1980 december 12-én tőzsdére kerülnek az Apple részvények. Jobs részesedése 256 mil-lió dollárt ér.
+•	1983 januárban megjelenik az Apple Lisa, amelynek névadója Steve Jobs lánya volt. Ez volt az első olyan kereskedelmi gép, ami (alapértelmezésben) kizárólag egérrel vezérelhe-tő grafikus felhasználói felület-et használt. Azonban (habár az Aple III-nál jobb konst-rukció volt) nem lett sikeres, főleg a magas ára miatt. Két éven belül leállították a gyártá-sát.
+•	1984-ben piacra kerül az Apple Macintosh. Kezdetben az eladási mutatók az elvárt alatt teljesítenek, ezen későbbi fejlesztések változtatnak majd és azután válik siker géppé.
+•	1985-ben hatalmi összetűzésbe került Steve Jobs Apple vezetési testületével és távozni kényszerül az Apple-től. Steve Wozniak szintén távozik. Steve Jobs néhány hónap múlva megalapította NeXT néven ismert saját cégét.
+•	1996-ban a NeXT-et felvásárolta az Apple 429 millió dollárért.
+•	1997-ben Jobs az Apple ideiglenes (interim chief) vezetője lesz. 2000-ben az ideiglenes jelző kikerül a megnevezésből.
+•	1998-ban piacra kerül az iMac, ami átütő siker, az Apple részvénye sokszorosára növe-kednek és milliós példányban adnak el belőle. 
+•	2001-ben megjelenik az első iPod, ami hatalmas siker és új fejezet az Apple életében. Szintúgy a 2003-ban elindított iTunes szolgáltatás, amely új üzleti modellt nyit a piacon és már az első héten 1 milliónál több zeneszámot értékesít.
+•	2007-ben megjelenik az iPhone. Habár az elemzők szkeptikusak voltak, a siker átütő és minden optimizmust meghaladó lett. Forradalmat jelentett az okostelefonok piacán.
+•	2010-ben megjelenik az iPad, ami bár nem technikai újdonság, de egy új piaci szegmens, az ún. táblagép kialakulását jelenti. Az egyik legnagyobb rivális a Samsung lesz a telefon- és táblagép-piacon, ahol aztán több szabadalmi jogi vita alakul ki.
+•	2011. Steve Jobs augusztus 25-én hajnalban egy rövid levélben bejelentette lemondását az Apple vezérigazgatói posztjáról. Helyét Tim Cook, az Apple értékesítésért felelős alel-nöke, illetve Jobs hosszú betegszabadságai alatt a vállalat operatív vezetője vette át. Jobs nem távozott az Apple-től, megmaradt az igazgatótanács elnökének és Apple-alkalmazottnak egészen 2011. október 5-i elhunytáig.
+
+
+
+
+OS/2
+Az OS/2 a Microsoft és IBM által fejlesztett operációs rendszer, melyet később az IBM egyedül fejlesztett tovább. A név az Operating System/2 kifejezés rövidítése, és azért kap-ta, mert az IBM Personal System/2 (PS/2) nevű második generációs személyi számítógépek előnyben részesített operációs rendszere volt. Ma már nem árulja az IBM az OS/2-t, és a támogatását is fokozatosan megszüntették.
+Az OS/2-t az MS-DOS és a Microsoft Windows védett módú utódjának tervezték. Figye-lemreméltó, hogy az alapvető rendszerhívásokat az MS-DOS hívások után modellezték; a nevük is DOS-szal kezdődött, és lehetőség volt arra is, hogy a szövegmódú alkalmazásokat úgy kapcsolják, hogy azok futhattak mindkét operációs rendszeren ("ugráló" programok). Ezen örökség miatt a kinézet, az érzés és a képességek terén az OS/2 nem sokban külön-bözik a Windowstól, de hasonlóságot mutat a Unix-szal és a XENIX-szel is.
+ 
+Fejlesztési történet
+Lelkes kezdetek
+Az IBM és a Microsoft 1985 augusztusában írta alá az Egyesített Fejlesztési Szerződést.
+Az OS/2 1.0-s verzióját 1987 áprilisában jelentették be és decemberben hozták forgalomba, kizárólag szöveges módban futó operációs rendszerként, azonban gazdag API-val (alkal-mazásprogramozási felület angolul application programming interface, röviden API) rendel-kezett a videó megjelenítő (VIO) vezérlésére, egér- és billentyűzetesemények kezelésére, egyfajta védett módú BIOS-szal. Nem meglepő, a videó és billentyűzet API-k elérhetőek voltak a programok közötti váltáshoz MS-DOS-on. Egy feladatváltó is elérhető volt Program Selector néven, a Ctrl-Esc billentyűkombinációval, lehetővé téve a felhasználónak, hogy vált-son a többfeladatú szövegmódú folyamatok között.
+A megígért grafikus felhasználói felület (GUI), a Presentation Manager az OS/2 1.1-gyel jelent meg 1988 novemberében. Ez volt a későbbi Windows 3.0 kinézetének előfutára.
+Az 1.2-es verzióval megjelent a HPFS fájlrendszer, mely optimális merevlemez-kihasználtságot, gyors adatelérést tett lehetővé. Kiterjesztette a FAT fájlrendszert is, a kiterjesztett attribútumok (EA, Enhanced Attributes) nevű változó adatfolyamok bevezeté-sével, amelyek a HPFS-en is elérhetőek voltak.
+Az 1980-as évek végén kiadott, OS/2-vel és Windows-zal kapcsolatos könyvek elismerték mindkettő operációs rendszer létezését, de az OS/2-t reklámozták a jövő operációs rend-szereként.
+OS/2 2.0
+
+Az első, tisztán IBM-es OS/2 a 2.0 verzió volt (1992. április). Ez az operációs rendszer már 32 bites, amely forradalmi újdonságokat ígért: valódi, védett többfeladatosságot, a memó-riakorlátok feloldását, megbízható fájl-kezelést, új 32 bites programozási felületeket (API-kat), a korszerű hardverek lehetőségeinek teljes kihasználását és a 16 bites DOS-os, win-dows-os programok futtathatóságát. Kihasználta az Intel 80386-os processzor által nyújtott lehetőségeket. Az új grafikus felület (Workplace Shell) lett az első PC-s objektum orientált felhasználói felület.
+OS/2 Warp
+Az OS/2 Warp 3 induló képernyője.
+Az igazi áttörést azonban az OS/2 Warp (3.0) megjelenése jelentette. Ez az új változat már valódi 32 bites operációs rendszer, hatalmas teljesítmény igénnyel, így tulajdonképpen a 486-os és a Pentium gépekre készült. Elvben már a 4 megabájtos memóriával felszerelt gépeken is fut, de ez a gyakorlatban 16 Mb-ot jelent. A Warp figyel a multimédiára is: nemcsak az ismert CD-gyártók IDE buszos meghajtóit fogadja el, hanem a SCSI eszközöket, valamint az összes Sound Blaster hangkártya változatot és az ezzel kompatibilis IBM Business Sounds Systemet is. A fejlesztőket dicséri, hogy sok újdonságot is megvalósítottak, és pótolták mindazt, ami eddig hiányzott: a multimédia teljes értékű, ope-rációs rendszer szintű támogatását, valamint a rendszerszoftver részeként adott alkalmazói programokat. A rendszerben egy peer to peer hálózati rész is található, amely az IBM Per-son to Person for OS/2 nevet kapta. Ez a modul kis rendszerekben teszi egyszerűvé a Warp használatát. Lehetőséget adott Windows (3.1) programok futtatására is.
+Warp 4.0
+
+Az OS/2 Warp 4-en fut Firefox 3.5.4.
+
+Az OS/2 következő verziója a Warp 4.0 (kódnevén Merlin) újabb hatalmas áttörés az ope-rációs rendszerek piacán. Miközben megőrzi az OS/2-re jellemző masszív, roppant üzembiz-tos felépítését, olyan kényelmi funkciókkal bővül, amelyek segítik és gyorsítják a munkát. Ilyen változtatás pl: A Voice Assist amely már nemcsak a többféleképpen megírt egyszerű hangvezérlést támogatja, hanem a lényegesen bonyolultabb átfogó hangtechnikai integráltsá-got. Tehát a szövegszerkesztő beszéd után készíti a szöveget, teljesen szükségtelenné válik a billentyűzet. Az alkalmazásfejlesztők is felismerték az ebben a technológiában rejlő lehető-ségeket és elkezdték a fejlesztést. Az első példa a Netscape Navigator, amely az interneten való barangoláshoz használja a hangvezérlést.
+
+Vége:
+Az IBM a múlt hét végén (2005. 07) bejelentette, hogy néhány hónapon belül teljesen be-szünteti egykor nagyreményű operációs rendszerének, az OS/2 értékesítését és támogatá-sát. Az anno még a Microsoft-tal közösen kifejlesztett alapokon nyugvó rendszerből már 9 éve nem jelent meg újabb változat, ennek ellenére még mindig mérhető piaci részedeséssel rendelkezik a vállalati és banki szektorokban.
+Azok a felhasználók részére, akik 2005. december 31-e után is használatban szeretnék tartani OS/2 alapú rendszereiket, az IBM fizetős támogatást kínál külön szerződés keretében. 
+ 
+OS/2 WARP 4
+Jelen
+Az OS/2 fejlesztését az IBM befejezte, és a rendszertámogatást 2006 december 31-én meg-szüntette. A software hibajavítását egyedi szerződéseken keresztül továbbra is biztosítják.
+
+
+
+
+
+
+
+BeOS
+A BeOS a Be Incorporated gyártmányú BeBox gépek operációs rendszere, elsőnek 1990-ben publikálták, melynek az egyik kulcseleme a GUI felületének szerkezete és használha-tósága.
+A Be Incorporated volt az a cég, amely a BeOS operációs rendszert és a BeBox számítógépet fejlesztette.
+A vállalkozást az Apple egykori igazgatója, Jean-Louis Gassée alapította 1990-ben, miu-tán távozott a cégtől. A Be célja az volt, hogy egy operációs rendszert írjon C++ nyelven egy szabadalmaztatott hardverre. 1995-ben a Be útjára indította a BeBox névre keresztelt számítógépet. A Bebox és a BeOS mellett a Be fejlesztette a BeIA nevű, internetre csatlakoz-ni képes berendezések számára készült operációs rendszert. A rövid életciklusú rendszert a Sony néhány terméke használta.
+ Ez egy fokozottan moduláris, egyfelhasználós, teljesen alapjaiból újra írt rendszer, legfő-képp a digitális médiafájlok kezelésére írták: digitális audio, video és 3D grafikai feldolgo-zásra.
+A rendszernek léteznek azóta PowerPC és Intel processzorokon futó változatai is, bár ezek nem élvezik az eredeti BeBox multimédiás teljesítményét.
+Az 1990-es évek közepén felmerült, hogy az operációs rendszere fejlesztésében lemaradó Apple a BeOS-t használja a Macintosh gépeinek az operációs rendszereként a Mac OS helyett. Az ötletet végül elvetették, helyette a NextSTEP rendszert választották a Steve Jobs vezette NeXT Computer megvásárlása révén.
+A BeOS 2001-ben a Palm Inc. tulajdonába került, mikor a cég felvásárolta a Be Inc.-et. Korábban a BeOS-t kisszámú önkéntes gondozta. A BeOS folytatásaként fogható fel a nyílt forrású Haiku operációs rendszer, amely kompatibilis a BeOS-sal, és 2001-től 2004-ig OpenBeOS néven volt ismert, ezt követően változtatták a nevét Haiku-ra.
+ 
+ 
+BeBox
+A 90-es évek elején a Be Inc elkezdte fejleszteni saját platformját.
+Először AT&T DSP processzorokkal próbálkoztak gépet építeni. Ráraktak 4-5 darabot, majd tesztelgették rajta a készülő BeOS-t. Mivel a rendszer nem bizonyult valami életké-pesnek, újabb megoldások után néztek, nagy szerencséjükre a PowerPC architektúra épp szárnyait bontogatta, gyorsan le is csaptak rá, pontosabban a 603-as PowerPC-re, ráadásul egyből kettőre!
+Elkészült az első igazán ütőképes BeBox, amely SMP rendszerű volt, és két da-rab PowerPC 603 zümmögött benne.
+Sok érdekességet rejt még ez a gép, például a GeekPort nevű univerzális port, amiben töm-érdek I/O lehetőség rejlett. 
+Sajnos a gép megbukott, majd a cég is vele, és végül az operációs rendszer is. 
+ 
+
+SMP rendszer: SMP-nek az egyik féle többprocesszoros rendszert nevezzük. Az SMP eseté-ben több processzor osztozik ugyanazon a memórián (tehát közös a memória), valamint min-den processzor egyforma. A ma elterjedt több magos CPU-k SMP rendszerek önmagukban is.
+Power PC 603: A PowerPC az Apple–IBM–Motorola cégek által megalkotott 32 és 64 bit es RISC utasításkészletű mikroprocesszor-specifikáció, amely 1991-ben indult útjára, ekkor még csak tervek formájában. Első konkrét megvalósításai a PowerPC 600 családba tarto-zó PowerPC processzorok. A szervezet célja a PowerPC processzorok megalkotása, majd álta-lános célú PowerPC processzorok tervezése volt, személyi számítógépekben való felhasználás céljaira. Ennek első, 1993-ban megvalósult eredménye volt a PowerPC 601 processzor, ame-lyet rövidesen a második generációs processzorok követtek, a PowerPC 603, PowerPC 604 és a  64 bites PowerPC 620.
+
+
+
+
+
+HAIKU
+A Haiku egy nyílt forrású és ingyenes operációs rendszer, mely azzal a céllal indult, hogy újjáteremtsék, s kibővítve folytassák a BeOS operációs rendszert. A fejlesztés 2001-ben indult el, a projektet 2004-ig úgy ismerték, hogy OpenBeOS, de egy egyszerű szerzői jogi vita miatt nevet kellett váltani. A projekt 2008-ban "self-hosting"-á vált, amely azt jelenti, hogy az operációs rendszert akár saját korábbi verziója alatt is lehet teljes körűen fejleszteni. Az első alpha kiadás 2009 szeptemberében, míg a második alpha kiadást 2010 májusában adták ki.
+A fejlesztés koordinálását a New York-i székhelyű Haiku Inc. nonprofit szervezet végzi, melyet 2003-ban Michael Phipps alapított, és azóta is vezeti.
+A kernel a NewOS-en alapul. A mikro kernel egy korábbi Be fejlesztőmérnök munkája, s to-vábbfejlesztette egy „keménymag” jelzővel ellátott programozói csapat
+ 
+Irányelvei
+A fejlesztők által elsősorban személyi számítógépekre szánt operációs rendszer főként gyorsaságával, egyszerűségével, alacsony erőforrásigényével, és könnyű kiismerhetőségé-vel szeretne teret hódítani a felhasználók között, ezért a fejlesztéskor ezen szempontokat tartják szem előtt.
+
+
+
+
+GEOS
+A GEOS egy klasszikus, Mac OS-szerű operációs rendszer, ami grafikus felületet nyújt a lemezkezeléshez és a felhasználói szoftverek futtatásához. Célcsoportja az üzleti felhasz-nálás, irodai szövegszerkesztés, de otthoni felhasználásra, egyszerű kiadványszerkesztésre és adatnyilvántartásra is alkalmas. Az eredeti GEOS-t már sehol nem használják, a 90-es évek elején kikopott a használatból az IBM, Apple és a Microsoft erős konkurenciája valamint a hardverkörnyezet jelentős megváltozása miatt. 
+
+
+Hardverkövetelmények
+Bár a GEOS később az Apple II gépeken, sőt PC-n is elérhetővé vált, elsősorban a Com-modore 64-es változatra fókuszált, hiszen már ingyenesen elérhető és nagyon sok információ található róla. A GEOS elfut bármelyik Commodore 64 számítógépen. A Commodore 64-es népszerűsége játékgépként biztosította, hogy a legtöbb C64 emulátoron is elindul. A GEOS ingyenesen volt letölthető.
+•	1 MHz-es 8 bites MOS 6510-es processzor
+•	64 kByte RAM (+20 KB ROM, ami a 7 KB-os Kernel-t tartalmazta)
+•	16 szín használata 40x25 karakteres módban (320x200 képpontos felbontás)
+
+
+A GEOS rövid története
+A GEOS-ban nem maga a felület a legérdekesebb, hanem a rendszer forráskódjában azok a részek, amiket a ma már elképzelhetetlen hardverkörnyezet miatt implementáltak. 
+implementál=gyakorlatba ültet, megvalósít, valóra vált
+A Graphic Environment Operating System 1986-ban jelent meg a Berkeley Softworks mun-kája nyomán. Ezt a kis céget Brian Dougherty vállalkozó alapította. A GEOS a későb-bi Apple II-höz és PC-hez hasonlóan klasszikus Mac-szerű GUI, ami Commodore 64-es és 128-as gépeken fut. 1980 körül Brian elutasította az IBM állásajánlatát, hogy a Mattel játékgyárnál dolgozhasson, ahol később az Intellivision nevű játékot találták ki. Brian a játé-kok írásánál segédkezett nagyjából egy évig, amikor több mérnöktársával együtt otthagyta a céget és megalapította az Imagic-et. Ez a cég egy nagyon sikeres játékgyár, az Activision ellenfele volt, amíg az 1983-as játékipari válság ki nem kezdte. Bár az Imagic 1986-ban tönkrement, Brian nem.
+Dougherty megalapította a Berkeley Softworks (később Geoworks) nevű céget egy olyan vállalkozással közösen, ami elemeket gyártott és egy repülőgépeken használatos "Sky Tray" nevű eszközön dolgoztak épp. Ezek az ülések hátába szerelhető számítógépek vol-tak. Brian és csapata azt a feladatot kapta, hogy kifejlessze hozzájuk az operációs rendszert. A GEOS-t Dougherty és programozóinak elit csapata fejlesztette ki, akik tapasztalataikat a na-gyon korlátolt Atari 2600-on és Intellivision (általában 4 KB-nyi memóriával szerelt) játékkon-zolokra való fejlesztéssel szerezték. Miután azonban a rendszer elkészült, a Sky Tray pro-jektet abbahagyták, mert az új légiforgalmi törvények értelmében a repülőgépeken csök-kenteni kellett a súlyt és az üzemanyag felhasználást. 
+  
+							eredeti GEOS lemezek a C64-hez
+Bár a Berkeley Softworks nagyon kis cégként indult - csak két ügynökük volt - az új rend-szer nagyon népszerűnek bizonyult, hiszen a szükséges hardver nagyon olcsó volt, a rend-szer pedig remek. Ez a Commodore 64 agresszív árazásának is volt köszönhető, hiszen a gé-pet otthoni számítógépnek és játékgépnek szánták, így kedvezményekkel együtt akkori-ban akár 100 dollárért is lehetett venni egyet. Ezzel szemben a korabeli tipikus PC-t 2000 dollárért árusították (amelyhez még szükség volt egy MS-DOS-ra is vagy 99 dollárért egy Windows 1.0-ra), de egy jó Mac 512k Enhanced-ért is hasonló összeget kértek. 1986-ban a Commodore Business Machines bejelentette a Commodore 64 C modelljét, amiben a régi, kenyértartó-alakú formát elhagyták és új, Amiga-szerű házat kapott. A GEOS-t pedig az USA-ban a géphez csomagolták. Karrierjének csúcsán a GEOS a második legszélesebb körben használt grafikus felület volt, a Mac után és a harmadik legnépszerűbb operációs rendszer volt (az eladott darabszámot figyelembe véve) az MS-DOS és a Mac OS után
+  
+ 
+ 
+GeoWrite – szövegszerkesztés GEOS alatt, C64-en
+
+
+
+
+
+
+
+
+
+Windows 95
+A Microsoft Windows 95 (eredeti kódnevén Chicago) a számítástechnikában a Microsoft Windows operációs rendszer egyik fontos verziója. Az 1995-ben kiadott változat, mely magyar nyelven is megjelent, a Microsoft három általános célú operációs rendszerének 
+- a Windows 3.1-nek, 
+-a Windows for Workgroupsnak és 
+- az MS-DOS-nak – az utódja.
+A Windows 95-ben integrálva található 
+-	egy 32 bites TCP/IP kód a beépített internet-támogatáshoz; 
+-	telefonos hálózat; 
+-	valamint új Plug and Play képességek, amelyek segítenek a felhasználóknak az egy-szerűbb hardver- és szoftvertelepítésben.
+A 32 bites Windows 95 javította a multimédia lehetőségeket, a mobil számítógépezéshez még erőteljesebb funkciókat és beépített hálózati képességeket is tartalmaz. Megjelenése 1995 Au-gusztus 24 volt. Ez a verzió még csak FAT 16 fájlrendszereket kezelt majd a későbbi frissí-tésekkel érkezett hozzá az OSR2(OEM SERVICE REALSE)-ben a Fat32 támogatása va-lamint ezzel egyidejűleg az Ultra DMA támogatása is bekerült így már a 2GB-nál nagyobb lemezeket is kezelte a rendszer és biztosított volt a gyorsabb adatátvitel is. A legnagyobb újítás azonban az MMX utasításkészlet támogatása volt. A későbbi OSR2-be bekerült az USB támogatása is. Az OSR2 megjelenésére 97- ig kellett várni még ebben az évben megje-lent az OSR2.1 és a 2.5 is.
+
+MMX: 8 db 64 bites véletlen elérésű regiszter hozzáadása az x86-hoz.
+
+
+
+
+
+
+
+Windows 95 OSR2
+
+A Windows 95-ben vezették be a Windows 7-es változatáig bezárólag minden Windows operációs rendszerben megtalálható Start gombot és a Start menüt, ahonnan indíthatóak a programok és egyéb műveletek. A Windows 8-ban ezek nem találhatók meg (külsős prog-ramokkal visszahozhatók), viszont a 8.1-ben megtalálható a Start gomb, mely a Kezdőkép-ernyőre vezet. A Microsoft a 2014-es \\build\ konferencián bejelentette, hogy visszahozzák a Start menü egy új, ráncfelvarrott változatát. A Start menü a Windows 10-ben visszatért.
+Agresszív reklám
+A Windows 95 alapította meg a Microsoft cég „vaporware” (magyarul „porhintés”) ha-gyományait: bár 1993-ban bejelentették olyan hírveréssel, ami nagy tömegeket befolyásolt abban, hogy a termékre várjanak, de csak 1995-re készült el. Megjelentetését agresszív rek-lámkampány kísérte, melyben a Rolling Stones együttes is szerepelt Start Me Up című számá-val. Magyarországon pedig a Szomszédokban is említést tettek róla. Állítólag voltak, akik a nagy felhajtás miatt vásárolták meg a szoftvert, és később jöttek rá, hogy nincs rá szükségük (mert például nincs számítógépük)
+   
+ 
+ 
+Rendszerkövetelmények a Windows 95 telepítéséhez:
+
+•	Személyi számítógép 386DX vagy újabb processzorral (486 javasolt)
+•	4 megabyte (MB) memória (8 MB javasolt)
+•	35-40 MB szabad hely a merevlemezen a Windows 95-re való frissítéshez: A ténylege-sen megkívánt szabad tárterület függ a telepíteni kívánt összetevőktől is.
+•	50-55 MB szabad hely operációs rendszer nélküli merevlemezen a Windows 95 telepíté-séhez : A ténylegesen megkívánt szabad tárterület függ a telepíteni kívánt összetevőktől is.
+•	Egy 3.5-inch-es nagy sűrűségű hajlékonylemez meghajtó
+•	VGA vagy jobb felbontás(256-színű SVGA javasolt)
+
+Windows 98
+A Microsoft Windows 98 (eredeti kódnevén Memphis) a Microsoft Windows operációs rendszer egyik verziója. Az 1998-ban kiadott változat, mely magyar nyelven is megjelent, a Windows 95 frissítése volt. A Windows 98 volt az első olyan Windows-verzió, amely kifejezetten otthoni felhasználóknak lett tervezve.
+A Windows 98-cal leegyszerűsödött a számítógépen és az interneten való keresés művelete. Ezenkívül gyorsabban lehetett megnyitni és bezárni az alkalmazásokat, támogatta a DVD-lemezek olvasását és az univerzális soros buszos(USB) eszközöket. Ellenben mégis lassabb és nagyobb volt, mint a Windows 95, és több helyen volt benne stabilitási hiba. Ezek javí-tására valamint egyéb funkciók hozzáadására jött létre a második kiadás.
+Az 1999-ben kiadott Microsoft Windows 98 második kiadás (eredeti nevén Second Edition, rövidítve SE) új és továbbfejlesztett hardverkompatibilitást és internettel kapcsolatos funkció-kat nyújtott.
+
+A Windows 98 második kiadás javított az internetes szolgáltatásokon az új Internet Explorer 5.0-s böngészőtechnológiával és a Windows NetMeeting 3.0 konferenciaszoftverrel. Tartal-mazta még a Microsoft DirectX API 6.1-et, amely továbbfejlesztett támogatást nyújtott a Windows multimédiához; valamint otthoni hálózati lehetőségeket nyújtott az internetkapcso-lat megosztása (ICS) szolgáltatással. A Windows 98 SE volt az első olyan otthoni felhaszná-lóknak szánt operációs rendszer a Microsofttól, amely képes volt az olyan eszközillesztők használatára, melyek a Windows NT üzleti operációs rendszerrel is működtek.
+1998. április 20-án egy nyilvános Microsoft-bemutatón összeomlott a Windows 98.
+Sokan bírálták a Windows 98 második kiadását, hogy az nem elég innovatív, és hogy az ere-deti változatot birtoklók nem kaphatták meg ingyen az újabb változatot.
+ 
+
+Minimális hardverigénye: 
+•	80486 DX2 66MHz processzor, 
+•	16 MB RAM, 
+•	200MB szabad merevlemezterület, 
+•	VGA monitor.
+
+
+
+
+
+
+
+
+
+
+
+Mac OS
+A Mac OS az Apple Macintosh számítógépek hagyományos operációs rendszere. 1984-ben jelent meg az első Macintosh számítógéppel, a Macintosh 128k-val. Az első üzleti sikert jelentő operációs rendszer volt, amely grafikus felhasználói felülettel rendelkezett.
+Története
+A korábbi Apple modelleket vagy saját operációs rendszerrel szállította az Apple (Lisa OS), vagy a korai DOS-ok valamelyikével. A Mac OS fejlesztéséért a Macintosh Team felelt, (tagjai között volt többek között Jeff Raskin, Andy Herzfeld és Bill Atkinson.) Ezek közül a Macintosh és a Xerox PARC Alto projectje közti összefüggés bizonyított, de nem szabad megfeledkezni Ivan Sutherland Sketchpad és Doug Engelhardt On-Line System nevű szoftvereiről sem. Az ötlet eredetének problémája végül az Apple és a Microsoft közti look and feel perben csúcsosodott ki. A perben, amely a Mac OS (és a Lisa OS) és a Microsoft Windows (és a HP NewWawe) operációs rendszerek közti hasonlóságok jogsértő voltát tárgyalta, végül 1994-ben született az Apple kártérítési igényét elutasító döntés.
+Az operációs rendszer kezdetben két programból, a Systemből és a Finderből állt, melyek saját verziószámozással rendelkeztek. Fejlesztések esetén is ezt a két programot adta ki az Apple System Software néven. Ez a forma hamarosan lerövidült egyszerűen Systemmé, a verziószámokat pedig egymáshoz igazították. Az első ilyen módon sorszámozott kiadás a System 6 volt, melynek hamarosan megjelent magyarított kiadása a híres-hírhedt System 6.0.7, amely a Mindenesen és a Rendszerelemeken kívül már Nyomtatóeszközöket is tartalmazott. A Mac logót – kék mosolygó arc – először a 7.5.1-es rendszer tartalmazta, és a 7.5-ös verziót hívták először Mac OS-nek. Utóbbi váltás azért történt, hogy a felhasználó összekösse a rendszert az Apple-lel, még ha valamelyik Macintosh klónon használta is a rendszert. 
+A G3-mas processzorral szerelt – úgynevezett New World – gépekkel szűnt meg a gyakorlat, hogy az operációs rendszer fontos részei a gépek alaplapjára forrasztott ROM chipen voltak tárolva. Eredetileg a helytakarékosság volt a célja ennek a szokásnak, hiszen a korai Macintosh gépek nem rendelkeztek merevlemezzel, a 800k-s floppylemezek tárterülete pedig véges volt. (Igaz csupán ROM-ról csak egy gép, az 1990-es kiadású Mac Classic tudott bootolni.) A későbbiekben a ROM chip feladata már az volt, hogy biztosítsa, hogy a Mac OS csak Apple gyártmányú vagy licencelt ROM chippel rendelkező klón gépeken futhasson.
+A Mac OS történetét két részre oszthatjuk:
+•	A fentebb tárgyalt klasszikus Mac OS, melynek pályafutása az 1984-es System Software megjelenésével kezdődött és 2001-ig a Mac OS 9.2.2 megjelenéséig tartott.
+•	Az új generációs Unix-szerű Mac OS X.
+Jellemzői
+A „klasszikus” Mac OS legfontosabb jellemzője a parancssoros mód teljes hiánya volt. Bár elismerték Mac OS felhasználó barátságát, sok kritika érte az első verziókat az egyfeladatos felépítés miatt. Ezt később kooperatív többfeladatos rendszerré fejlesztették, de az idők kihívásának ez sem felelt meg. Hasonlóan sok kritikát kapott a rendszer memóriakezelése és a „kiegészítések” gyakori hibái. Ez utóbbiak arra voltak hivatottak, hogy plusz funkcionalitást adjanak az operációs rendszerhez (például hálózatkezelés, AppleTalk) vagy hardvereszközök használhatóságát biztosítsák (Zip és Jaz meghajtók). Gyakran előfordult, hogy a kiegészítések nem működtek más kiegészítések jelenlétében, vagy a rendszer csak bizonyos betöltési sorrend esetén működött helyesen. Összességében elmondható, hogy egy teljes működő „klasszikus” Mac OS rendszer összerakása sok fáradságba került a felhasználónak.
+A Mac OS eredetileg a Macintosh File rendszert (MFS) használta adatainak tárolására. Ez úgynevezett flat file rendszerű volt (minden állomány a gyökérkönyvtárban 
+							System 7 rendszert futtató Macintosh SE
+tárolódik el), az Apple programozóinak csupán annyit sikerült elérni, hogy egy könyvtárszintet képes volt kezelni az MFS. A Macintosh Filerendszert 1985-ben küldte nyugdíjba az Apple, helyére a Hierarchikus Filerendszer (HFS) lépett, amely már kezelt fastruktúrájú könyvtárakat. A file rendszer mai verziója az 1998-ban megjelent HFS+, de a HFS támogatása sem szűnt meg, azonban OS X alatt nem bootolható az ilyen fájlrendszerű partíció.
+			
+ZIP meghajtó					
+        JAZ meghajtó
+
+Míg a DOS-os és unixos filerendszerek a fájlokat bájtok sorozatának kezelte, és így szükség volt egy alkalmazásra, ami tudta, mely bájtok milyen típusú információt tartalmaznak; addig az MFS és a HFS két verziója a fájlt két „fork” képében tárolta el. A data fork (adatsejt) tárolta azokat az információkat, amelyek más rendszerek esetén a fájl tartalmát adják, például a szövegfájl esetén szöveget, képfájl esetén a bittérképet. A resource fork (programsejt) más típusú strukturált adatokat tartalmazott a fájllal kapcsolatban, például a megnyitó programot, formázási információt, képet vagy akár a menük szövegeit (ezért egyszerűen lokalizálható a klasszikus Mac OS). A rendszer előnye, hogy a fájl adat része akkor is olvasható marad, ha a megnyitó program nem képes értelmezni a programsejt adatait (elveszett vagy megrongálódott), így a nyers szöveghez hozzájutunk. Hátránya, hogy más fájlrendszerekkel nem kompatibilis, ha egy Macről egy nem Macre fájlt másolunk, programsejt által tárolt információkat elveszítjük a nem Mac rendszeren. A PowerPC processzorokra való váltás után írt programoknál a programsejt tárolta a Motorola 68K processzorra és a PowerPC-re írt kódot is.
+
+
+
+
+
+
+
+
+Power PC Macintosh
+
+Mac OS szolgáltatások
+•	Chooser: interfész hálózati szolgáltatások (például AppleTalk) és nyomtatók eléréséhez
+•	ColorSync: színhűség beállításának módja
+•	Finder: interfész a fájlok közti böngészésre és programok indítására
+•	Mac-Roman: karakterkészlet (más karakterkészleten támogatta a magyar karaktereket is)
+•	Motorola 68K emuláció: lehetővé tette a régebbi kódok futtatását a CISC-elvű Motorola 68K processzorcsaládról a RISC-elvű PowerPC-re váltás után is
+•	Multi-Finder: lehetővé teszi több folyamat futtatását
+•	Plaintalk: Szövegfelismerő és felolvasó eljárás
+•	QuickDraw: az első piaci WYSIWYG leképező modell
+•	QuickTime: Audio/Video felvétel és lejátszás
+ 
+MAC OS X Lion (magyar verzió)
+
+ MAC OS
+
+
+
+
+
+
+
+
+
+
+
+
+Macintosh
+A Macintosh (röviden Mac), Apple számítógépmodell, márkanév és nem utolsósorban plat-form. Az első verziók Motorola 68000-es processzorra épültek, majd a PowerPC processzo-rokkal debütáltak. Steve Jobs, az Apple Computer alapító igazgatójának döntése nyomán 2006-tól az Apple folyamatosan átállt az Intel processzoraira. Operációs rendszerük a Mac OS volt, jelenleg az OS X 10.9 Mavericks, mely grafikus felülettel (Aqua) rendelkezik és az egy-szerű használatra tervezték. A Mac OS X UNIX gyökerekkel bír.
+ Steve Jobs vésett aláírása az első Apple Macintosh számítógép házának belső oldalán. 
+
+
+
+Az első Mac, 1984-ben mutatták be, a jelek szerint (az ablak bal alsó sarkában látható) ez egy 128 kbyte-ról 512kbyte memóriájúra lett bővítve.
+ 
+Jelenlegi számítógépcsalád
+ 
+Az eredeti, 2005-ben megjelent Mac mini G4.
+Mac mini  
+A Mac mini az Apple kisméretű asztali számítógépe, melynek első változatát 2005-ben mutatták be. Ez a Mac modellválaszték legkisebb és legolcsóbb tagja. Az Apple szerint "ez a világ legenergiatakarékosabb asztali számítógépe". OS X van rajta, de Intel processzora révén minden operációs rendszer feltelepíthető rá. Az Apple főként otthoni használatra ajánlja. Monitor, billentyűzet és egér nélkül szállítják. Létezik egy szerver változata is két 1 TB-os 2,5" merevlemezzel szerelik. A 2011-es modell óta nincs optikai meghajtója, de WLAN-on képes CD/DVD-ket olvasni, illetve rendelhető hozzá USB-n csatlakoztatha-tó optikai meghajtó.
+Adatok
+A 2012. október 23.-i termékfrissítés adatai:
+•	2,5 GHz-es, kétmagos Intel Core i5 vagy 2,3 GHz-es, négymagos Intel Core i7 processzor
+•	3 MB vagy 6 MB L3 cache
+•	1600 MHz előoldali busz
+•	4 GB (2 x 2 GB) DDR3 memória (Választható 8 GB-os és 16 GB-os memóriaméret is)
+•	Intel HD Graphics 4000 grafikus processzor
+•	500 GB vagy 1 TB (2 x 1 TB Szerver) merevlemez
+•	Magasság: 3,6 cm
+•	Szélesség: 19,7 cm
+•	Mélység: 19,7 cm
+•	Tömeg: 1,22 kg
+Csatlakozások
+•	1× Tápcsatlakozó
+•	1× Thunderbolt port (akár 10 Gb/s)
+•	1× FireWire 800 port (akár 800 Mb/s)
+•	4× USB 3.0 port (akár 5 Gb/s)
+•	1× HDMI port
+•	1× SDXC-kártyahely
+•	1× 10/100/1000-LAN
+•	1× 3,5 mm audio be- és kimenet
+•	1× Infravörös érzékelő
+
+iMAC						Az eredeti, 1998-ban megjelent iMac G3.
+Az iMac az Apple egybeépített asztali számítógépe. Az 1998. május 6. termékbemutató óta az  Apple számítógép-kínálatának központi része. Eddig hét generációja jelent meg. OS X van rajta, de Intel processzora révén minden operációs rendszer feltelepíthető rá. Az Apple otthoni és üzleti használatra ajánlja. A 2012-es modell óta nincs lemezmeghajtója, de WLAN-on képes CD/DVD-ket olvasni, illetve rendelhető hozzá USB-n csatlakoztatha-tó lemezmeghajtó.
+Műszaki adatok
+A 2012. október 23.-i termékfrissítés adatai:
+21,5 hüvelykes változat
+•	21,5 hüvelykes képátlójú, LED-es háttér-világítású kijelző IPS technológiával; 1920 x 1080 képpontos felbontás, több millió szín megjelenítésének támogatása
+•	2,7 GHz-es vagy 2,9 GHz-es négymagos Intel Core i5 vagy 1,4 GHz-es kétmagos Intel Core i5
+•	6 MB L3 cache, kétmagosnál 3 MB
+•	1600 MHz előoldali busz
+•	8 GB (2 x 4 GB) DDR3 memória (választható 16 GB-os memóriaméret is)
+•	1 TB (5400 fordulat/perc) merevlemez
+•	NVIDIA GeForce GT 640M vagy 650M grafikus processzor 512 MB GDDR5 memóriá-val
+•	Magasság: 45 cm
+•	Szélesség: 52,8 cm 
+•	Mélység: 17,5 cm
+•	Tömeg: 5,68 kg
+27 hüvelykes változat
+•	27 hüvelykes képátlójú, LED-es háttér-világítású kijelző IPS technológiával; 2560 x 1440 képpontos felbontás, több millió szín megjelenítésének támogatása
+•	2,9 GHz-es vagy 3,2 GHz-es, négymagos Intel Core i5 processzor
+•	6 MB L3 cache							A hokikorong alakú iMac egér
+•	1600 MHz előoldali busz
+•	8 GB (2 x 4 GB) DDR3 memória (választható 16-os és 32 GB-os memóriaméret is)
+•	1 TB (7200 fordulat/perc) merevlemez
+•	NVIDIA GeForce GTX 660M vagy 675MX grafikus processzor 512 MB vagy 1 GB GDDR5 memóriával
+•	Magasság: 51,6 cm
+•	Szélesség: 65 cm
+•	Mélység: 20,3 cm
+•	Tömeg: 9,54 kg				Apple USB SuperDrive
+Csatlakozások
+•	1× Tápcsatlakozó
+•	1× SDXC-kártyahely
+•	4× USB 3.0 port (akár 5 Gb/s)
+•	2× Thunderbolt port (akár 10 Gb/s)
+•	1× 3,5 mm audio kimenet
+•	1× 10/100/1000 BASE-T Gigabit Ethernet (RJ-45 csatlakozó)
+•	1× Kensington zár nyílása 
+
+Mac Pro						Az eredeti torony alakú Mac Pro
+A Mac Pro az Apple munkaállomása, melynek első változatát 2006-ban mutatták be . A Power Mac G5 utódja, mikor PowerPC processzorból Intelre váltottak. Ez a Mac modell-választék legdrágább tagja. Az OS X Maveriks operációs rendszerrel előre telepítve érke-zik, de Intel processzora révén minden operációs rendszer feltelepíthető rá. A Mac Pro-t az Apple főként professzionális használatra ajánlja. Monitor, billentyűzet és egér nélkül szállít-ják. A 2013-as modell óta nincs optikai meghajtója, de WLAN-on képes CD/DVD-ket olvasni, illetve rendelhető hozzá USB-n csatlakoztatható optikai meghajtó.
+Mit jelent a több magos processzor
+A processzorok sebességének meghatározásakor fontos tényező (lehet) az órajel. Viszont a chipgyártók egyre nehezebben tudják növelni a processzorok órajelét (MHz, GHz), mivel az újabb problémákhoz vezet mint pl. a chip-ek melegedése. Tehát a gyártóknak más utat kellett választaniuk a teljesítmény növelésére. Így jöttek a képbe a több magos processzorok.
+Nagyon leegyszerűsítve a több magos processzort elképzelhetjük több processzorként, amit egy csomagban építenek össze. Természetesen a valóságban ez egy picit bonyolultabban néz ki, de a lényeg ugyanaz. Vagyis, a több magos számítógép 1-nél több logikai feldolgozó egy-séget képes használni egyszerre.
+A legújabb Mac Pro számítógépek akár 12 magos kiépítéssel is rendelhetőek, ami rend-szer szinten olyan, mintha 12 processzor működne egy gépben.
+Technikai adatok 						A 2013-as Mac Pro
+A 2013. október 22-i termékfrissítés adatai: 
+A doboz tartalma
+•	Mac Pro
+•	Hálózati tápkábel
+Processzor
+•	3,7 GHz-es, négymagos vagy 2.4 GHz hatmagos Intel Xeon E5 processzor
+Memória
+•	1066 MHz vagy 1333 MHz előoldali busz
+•	12 GB (3 x 4 GB), 16 GB (4 x 4 GB), 32 GB (4 x 8 GB) vagy 64 GB (4 x 16 GB) 1866 MHz DDR3 ECC memória
+Grafika
+•	2× AMD FirePro D300, D500, D700 2 GB GDDR5 memóriával
+Tárhely
+•	256 GB, 512 GB vagy 1 TB PCIe alapú SSD
+Méret és tömeg
+•	Magasság: 25,1 cm
+•	Átmérő: 16,7 cm
+•	Tömeg: 5 kg
+Csatlakozók és bővíthetőség
+•	4× USB 3 port
+•	6× Thunderbolt 2 port
+•	2× Gigabit Ethernet port
+•	1× HDMI 1.4 Ultra HD port
+•	2× 3,5 mm audio be- és kimenet
+Mellékelt szoftverek
+•	OS X Maveriks
+•	iLife
+•	iWork
+Vezeték nélküli kapcsolat
+•	802.11 ac Wi-Fi hálózatkezelés; kompatibilis az IEEE a/b/g/n szabvánnyal
+•	Bluetooth 4 vezeték nélküli technológia
+
+MacBook Air
+
+A MacBook Air az Apple kisméretű hordozható számítógépe, melynek első változa-tát 2008. január 18-án mutatták be San Franciscóban. Utazásra tervezték, mivel csak 1,08 kg (a 11"-os), illetve 1,35 kg (a 13"-os változat) súlyú és 17 milliméter vastag. Intel Core i5 vagy Core i7-es processzor van benne. SSD (flash alapú) háttértárral van felszerelve. A gépben 4 vagy 8 GiB RAM van. (Csak konfigurálható, de nem bővíthető.) OS X van rajta és Intel processzora révén minden operációs rendszer feltelepíthető rá. A MacBook Air-t az Apple főként otthoni használatra ajánlja. 
+Leírás
+A bemutatásakor az Apple szerint a MacBook Air volt a világ legvékonyabb laptopja, azonban az 1997-ben a Mitsubishi és a HP által fejlesztett Pedion 18,4 mm-es vastagságá-val volt legvékonyabb. A MacBook Air 2010-ben lekörözte 17 mm-es vastagságával, de nem sokáig ugyanis újabb riválisa akadt. Az Acer Aspire S5 ami 15 mm-es vastagságával jelenleg a világ legvékonyabb laptopja. 
+Tervezés
+Két változatban érhető el egy 11,6 és egy 13,3 hüvelykes modell. Az eredetileg csak 13,3 hüvelykes kivitelben készült. A gép alumíniumból van, legvékonyabb pontján 19 milliméter, súlya 1,3 kg. A MacBook Air kijelzője 11.6" méretű, mint az Apple MacBook modelljének. A 11,6 hüvelykes modell képpontszáma 1366 × 768 (16:9) és a 13,3 hüvelykes modellé pedig 1440 × 900 (16:10). Mindkettőnek LED-es háttérvilágítású a kijelzője. A billentyűzet megvilágított és a kijelző felett található egy 720p felbontású FaceTime HD kamera. Le-mezmeghajtója nincs, de WLAN-on képes CD/DVD-ket olvasni, illetve rendelhető hozzá USB-n csatlakoztatható lemezmeghajtó.
+Harmadik generációs modell
+A harmadik generációs MacBook Air 2011-ben jelent meg. A második generációhoz képest nagyon sokat nőtt a gép teljesítménye, új Intel i5, i7 processzorok kerültek a gépekbe, és Intel HD Graphics 3000 grafikus processzorok tették még lenyűgözőbbé a kijelző teljesítményét. Tervezés szempontjából a gép nem sokat változott, csupán visszakerült a billentyűzet háttérvi-lágítása az eszközökbe, illetve az F3, és F4 billentyűkkel ezentúl nem a Dashboard és az Expo-sé parancsot lehet aktiválni hanem a Mission controll, és a Launchpad alkalmazások indítóbil-lentyűi lettek. Hasznos újítás hogy a gépek egy új csatlakozási pontot kaptak mégpedig a Thunderbolt nevezetű kábel bemenetét, amely az Intel egyik leggyorsabb adatátviteli kábel csatlakozási pontja.
+Negyedik generációs modell
+A negyedik generációs MacBook Air bemutatására az Apple 2012-es Nemzetközi fejlesz-tői konferenciáján (WWDC) került sor. A frissítés során a gépekben az Intel új Ivy Bridge technológiás i5, és i7-es processzorai, és Intel Graphics 4000 grafikus processzorok növelték a hardver teljesítményét. Az eszköz ezenkívül megkapta 720p-s HD FaceTime kamerát, vala-mint az új USB 3 bemeneteket. Ezek mellett frissült az Apple MagSafe nevezetű notebook töltője, amelyet a MacBook Air szintén megkapott.
+Adatok
+A 2014. márciusi termékfrissítés adatai:
+11 hüvelykes változat
+•	1,4 GHz-es, kétmagos Intel Core i5 processzor
+•	3 MB L3 cache
+•	1600 MHz előoldali busz
+•	4 GB DDR3 memória (választható 8 GB-os memóriaméret is)
+•	128 GB-os vagy 256 GB-os flash tároló (választható 512 GB-os flash tároló is)
+•	Intel HD Graphics 5000 grafikus processzor
+•	Magasság: 0,3-1,7 cm
+•	Szélesség: 30 cm
+•	Mélység: 19,2 cm
+•	Tömeg: 1,08 kg
+13 hüvelykes változat
+•	1,4 GHz-es, kétmagos Intel Core i5 processzor
+•	3 MB L3 cache
+•	1600 MHz előoldali busz
+•	4 GB DDR3 memória (választható 8 GB-os memóriaméret is)
+•	128 GB-os vagy 256 GB-os flash tároló (választható 512 GB-os flash tároló is)
+•	Intel HD Graphics 5000 grafikus processzor
+•	Magasság: 0,3-1,7 cm			
+•	Szélesség: 32,5 cm				A mágneses MagSafe 2 töltő csatlakozó.
+•	Mélység: 22,7 cm
+•	Tömeg: 1,35 kg
+Csatlakozások
+A laptopnak viszonylag kevés csatlakozási pontja van.
+•	1× MagSafe 2 töltő csatlakozó
+•	2× USB 3.0
+•	1× Thunderbolt
+•	1× 3,5 mm audio kimenet
+•	1× SDXC-kártyahely (csak a 13 hüvelykes modelleken
+
+MacBook Pro			Az eredeti, 2006-ban megjelent MacBook Pro
+A MacBookPro az Apple professzionális hordozható számítógépe, a Powerbook G4 utódja, mikor PowerPC processzorból Intelre váltottak. Az első változatát 2006-ban mu-tatták be. Gyárilag OS X operációs rendszert futtat, de Intel processzora révén más ope-rációs rendszer is feltelepíthető rá. Négy változatban érhető el egy 13, 15 hüvelykes modell és a 13, 15 hüvelykes modell vékonyabb Retina kijelzős változata. A MacBook Pro az Apple csúcs kategóriás laptopjaihoz tartozik ezért főként professzionális használatra ajánlja és egyben a legjobban vásárolt laptop az Apple-nél. A Retina kijelzős modellnek nincs lemez-meghajtója, de WLAN-on képes CD/DVD-ket olvasni, illetve rendelhető hozzá USB-n csatlakoztatható lemezmeghajtó.
+Leírás
+Ebből a laptopból 3 változat volt eredetileg: a kis 13 hüvelykes, a közepes 15 hüvelykes, és a nagy méretű 17 hüvelykes gép. A PowerBook G4-ből csak 15 és 17 hüvelykes változat készült. A 13 hüvelykes MacBook Pro-t 2008 októberében mutatták be, de még csak MacBook néven. Ez volt az első 13 hüvelykes unibody MacBook. A 2009-es WWDC-n került a Pro családhoz és akkor már megkapta a FireWire 800-as csatlakozót és a memóriakár-tya-olvasót. Még máig is ezt a laptopot vásárolják igazán. Főleg akkor mikor a fehér Mac-Book-ot kivonták a forgalomból. A 2012-es WWDC bemutatták ennek az ultravékony válto-zatát. Újabb és gyorsabb hardverelemekel rendelkezik és megkapta a Retina kijelzőt.
+Adatok
+MacBook Pro
+A 2012. június 11.-i termékfrissítés adatai:
+13,3 hüvelykes változat
+•	2,5 GHz-es, kétmagos Intel Core i5 vagy 2,9 GHz-es, kétmagos Intel Core i7 processzor
+•	3 MB vagy 4 MB L3 cache
+•	1600 MHz előoldali busz
+•	4 GB vagy 8 GB DDR3 memória
+•	500 GB vagy 750 GB (5400 fordulat/perc) merevlemez
+•	Intel HD Graphics 4000 grafikus processzor
+•	Magasság: 2,41 cm
+•	Szélesség: 32,5 cm
+•	Mélység: 22,7 cm
+•	Tömeg: 2,06 kg
+15,4 hüvelykes változat
+•	2,3 GHz-es, négymagos Intel Core i7 processzor
+•	6 MB L3 cache
+•	1600 MHz előoldali busz
+•	4 GB DDR3 memória
+•	500 GB (5400 fordulat/perc) merevlemez
+•	Intel HD Graphics 4000 grafikus processzor és NVIDIA GeForce GT 650M grafikus kár-tya 512 MB GDDR5 memóriával
+•	Magasság: 2,41 cm
+•	Szélesség: 36,4 cm
+•	Mélység: 24,9 cm
+•	Tömeg: 2,56 kg
+Retina kijelzős MacBook Pro
+A 2013. február 13.-i termékfrissítés adatai:
+13,3 hüvelykes változat
+•	2,5 GHz-es vagy 2,6 GHz-es kétmagos Intel Core i5 processzor
+•	4 MB L3 cache
+•	1600 MHz előoldali busz
+•	8 GB DDR3 memória
+•	128 GB vagy 256 GB flash tároló
+•	Intel HD Graphics 4000 grafikus processzor
+•	Magasság: 1,9 cm
+•	Szélesség: 31,4 cm
+•	Mélység: 21,9 cm
+•	Tömeg: 1,62 kg
+15,4 hüvelykes változat
+•	2,4 GHz-es vagy 2,7  GHz-es, négymagos Intel Core i7
+•	6 MB L3 cache
+•	1600 MHz előoldali busz
+•	8 GB vagy 16 GB DDR3 memória
+•	256 GB vagy 512 GB flash tároló
+•	Intel HD Graphics 4000 grafikus processzor és NVIDIA GeForce GT 650M grafikus kár-tya 1 GB GDDR5 memóriával
+•	Magasság: 1,8 cm
+•	Szélesség: 35,89 cm
+•	Mélység: 24,71 cm
+•	Tömeg: 2,02 kg
+Csatlakozások
+MacBook Pro
+•	1× MagSafe hálózati port
+•	1× 10/100/1000-LAN
+•	1× FireWire 800 port (akár 800 Mb/s)
+•	2× USB 3.0 (akár 5 Gb/s)
+•	1× Thunderbolt port (akár 10 Gb/s)
+•	1× 3,5 mm audio kimenet
+•	1× SDXC-kártyahely
+•	1× Kensington zár nyílása
+•	1× SuperDrive meghajtó (8-szoros sebesség)
+Retina kijelzős MacBook Pro
+•	1× MagSafe 2 hálózati port
+•	2× Thunderbolt port (akár 10 Gb/s)
+•	2× USB 3.0
+•	1× HDMI port
+•	1× 3,5 mm audio kimenet
+•	1× SDXC-kártyahely
+
+
+
+
